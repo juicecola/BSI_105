@@ -1,0 +1,24 @@
+{% extends "otree/Page.html" %}
+{% load otree static %}
+
+{% block global_styles  %}
+{% endblock %}
+
+{% block global_scripts  %}
+{% endblock %}
+
+{% block content %}
+
+  {# Get the participant's role and assign it to a variable #}
+  {% with role=player.id_in_group %}
+
+  {# Use the role variable to set the dynamic page title #}
+  <title>Player {{ role }}</title>
+
+  {# Continue with the rest of the content #}
+  {{ block.super }}
+
+  {% endwith %}
+
+{% endblock %}
+

@@ -1,0 +1,15 @@
+{% block title %}
+    {% if player.id_in_group == 1 %}
+        Player 1 Page
+    {% elif player.id_in_group == 2 %}
+        Player 2 Page
+    {% elif player.id_in_group == 3 %}
+        Player 3 Page
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {{ formfields }}
+    {{ next_button }}
+{% endblock %}
+

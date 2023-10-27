@@ -1,0 +1,14 @@
+{% block title %}
+    {% if player.id_in_group == 1 %}
+        Player 1 Results
+    {% elif player.id_in_group == 2 %}
+        Player 2 Results
+    {% elif player.id_in_group == 3 %}
+        Player 3 Results
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {{ next_button }}
+{% endblock %}
+
