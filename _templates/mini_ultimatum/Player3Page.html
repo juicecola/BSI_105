@@ -1,0 +1,14 @@
+{% extends "otree/Page.html" %}
+{% load otree static %}
+
+{% block content %}
+    <h2>Player 3 Page</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.punish.label_tag }} {{ form.punish }}
+        {{ form.punish.errors }}
+        <input type="submit" value="Submit">
+    </form>
+    {{ next_button }}
+{% endblock %}
+

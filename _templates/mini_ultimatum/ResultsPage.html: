@@ -1,0 +1,12 @@
+{% extends "otree/Page.html" %}
+{% load otree static %}
+
+{% block content %}
+    <h2>Results Page</h2>
+    <p>Amount Sent: {{ amount_sent }}</p>
+    <p>Punish: {{ punish }}</p>
+    <p>Player 1 Payout: {{ player1_payout }}</p>
+    <p>Player 2 Payout: {{ player2_payout }}</p>
+    {{ next_button }}
+{% endblock %}
+
